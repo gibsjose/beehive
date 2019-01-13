@@ -48,7 +48,7 @@ public:
     }
 
     // Method must be declared as friend
-    friend std::ostream& operator<<(std::ostream& stream, const Suit & s) {
+    friend std::ostream & operator<<(std::ostream & stream, const Suit & s) {
         if (s.GetColour() == Colour::RED) {
             stream << termcolor::colorize << termcolor::on_grey << termcolor::red;
         }

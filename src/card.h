@@ -24,7 +24,7 @@ public:
     bool operator== (const Card & c);
     bool operator!= (const Card & c);
 
-    friend std::ostream& operator<<(std::ostream& stream, const Card & c) {
+    friend std::ostream & operator<<(std::ostream & stream, const Card & c) {
         if (c.GetSuit().GetColour() == Colour::RED) {
             stream << termcolor::colorize << termcolor::on_grey << termcolor::red;
         }
